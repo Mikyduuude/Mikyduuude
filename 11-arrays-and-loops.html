@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>ARRAYS AND LOOPS</title>
+
+
+    </head>
+ 
+    <body>
+      
+    <SCript>
+  /*  const myarray=[
+        10,
+        20,
+        30];
+    console.log(myarray);
+    console.log(myarray[1]);
+    myarray[0]=99;
+    console.log(myarray);
+
+    [1,'hello',true,{name:'socks'},[1,2]]
+    console.log(typeof[1,2]);
+    console.log(Array.isArray([1,2]));
+
+    console.log(myarray.length);
+
+    myarray.push(100)
+    console.log(myarray);
+
+    myarray.splice(0,1);
+    console.log(myarray);*/
+       
+  /*  let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i +=1;
+}
+
+for( let i=1; i<=5;i++){
+    console.log(i);
+}
+
+let randomnumber=0;
+while (randomnumber<0.5) {
+    randomnumber=Math.random();
+}
+console.log(randomnumber);*/
+
+/*const todolist=[
+    'make dinner',
+    'wash dishes',
+    'watch youtube'
+];
+
+for(let i=0; i<=todolist.length;i++)
+{
+ const value=todolist[i]
+ console.log(value);   
+}*/
+/*const nums = [1, 1, 3]; // Renamed `num` to `nums` to avoid confusion with inner variable
+
+let total = 0;
+
+for (let i = 0; i < nums.length; i++) { // Fixed the loop condition from `1 < num.length` to `i < nums.length`
+    const num = nums[i]; // Renamed inner `num` to `num` (optional, for clarity)
+    total += num;
+}
+
+console.log(total); // Outputs: 5
+
+const numsDoubled=[];
+for (let i=0;i<nums.length;i++){
+    const num=nums[i];
+    numsDoubled.push(num*2);
+
+}
+console.log(numsDoubled);*/
+const array1 = [1, 2, 3];
+const array2 = array1.slice(); // Use slice() to create a shallow copy of array1
+array2.push(4);
+
+console.log(array1); // Output: [1, 2, 3] (array1 remains unchanged)
+console.log(array2); // Output: [1, 2, 3, 4] (array2 has 4 added to it)
+
+const [firstvalue,seconvalue]=[1,2,3];
+
+for (let i=1;i<=10;i++){
+    if(i%3===0){
+        continue;
+    }
+    console.log(i);
+    if(i===8){
+        break;
+    }
+}
+while (i<=10) {
+    if(i%3===0){
+        i++;
+        continue;}
+    console.log(i);
+    i++
+}
+function doublearray(nums) {
+    
+
+const num=[];
+const numsDoubled=[];
+for (let i=0;i<nums.length;i++){
+    const num=nums[i];
+
+    if (num===0) {
+        return numsDoubled;
+    }
+    numsDoubled.push(num*2);
+
+}
+return numsDoubled;
+}
+console.log( doublearray([1,1,3]));
+console.log(doublearray([2,2,5,0,5]));
+
+</SCript>
+    </body>
+</html>
